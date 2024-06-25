@@ -1,0 +1,33 @@
+.gameBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 20px;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -25%);
+}
+
+
+.gameCircle
+{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius:50%;
+    border:5px solid black;
+}
+.player_0
+{
+    background-color: white;
+}
+.player_1
+{
+background-color: red;
+}
+.player_2
+{
+    background-color: blue;
+}
