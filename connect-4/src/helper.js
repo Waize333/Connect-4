@@ -26,13 +26,19 @@ export const isWinner = (GameBoard, currentMove, currentPlayer) => {
     }
     return false;
 }
-export const isDraw=(GameBoard, currentMove, currentPlayer)=>
-    {
-    
-        let board = [...GameBoard];
-        board[currentMove] = currentPlayer;
 
-        let count =board.reduce((n,x)=>n+(x===0),0)
-        console.log(`count${count}`);
-        return count===0;
+export const isDraw = (GameBoard) => {
+    return GameBoard.every(cell => cell !== 0);
+}
+
+export const getComputerMove = (gameBoard) => {
+    let validMoves = [];
+    for (let i = 0; i < gameBoard.length; i++) {
+        if (gameBoard[i] === 0) {
+            validMoves.push(i);
+        }
     }
+    if (validMoves.length === 0) return null;
+    let rndMove = validMoves[Math.floor(Math.random() * validMoves.length)];
+    return rndMove;
+}
