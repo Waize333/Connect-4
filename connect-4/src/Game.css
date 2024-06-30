@@ -1,5 +1,10 @@
+
+:root
+{
+    --background-Color: rgb(0, 66, 141);
+}
 body {
-    background-color: rgb(17, 220, 235);
+    background-color:var(--background-Color);
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -106,5 +111,5 @@ body {
 }
 
 .player_2 {
-    background-color: blue;
+    background-color: rgb(3, 238, 183);
 }
