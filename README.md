@@ -4,7 +4,7 @@ Welcome to the Connect 4 React App! This is a web-based implementation of the cl
 
 ## Live Demo
 
-Check out the live demo of the app on Netlify: [Connect 4 React App]([https://your-netlify-link.netlify.app](https://spontaneous-licorice-badf12.netlify.app/))
+Check out the live demo of the app on Netlify: [Connect 4 React App](https://spontaneous-licorice-badf12.netlify.app/)
 
 ## Features
 
